@@ -1,11 +1,18 @@
-html, body {
+/** @format */
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
     margin: 0;
     padding: 0;
 }
 
 :root {
     --font-family: 'Karla', sans-serif;
-    --body-bg: #1E1F25;
+    --body-bg: #1e1f25;
     --btn-bg: #000;
     --btn-color: #cbcbcb;
     --btn-color-hover: #fff;
@@ -16,4 +23,50 @@ html, body {
     --grad-color5: #6a0d83;
 }
 
+body {
+    background: var(--body-bg);
+    font-family: var(--font-family);
+}
 
+.container {
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+.button {
+    background: var(--btn-bg);
+    color: var(--btn-color);
+    padding: 2rem 4rem;
+    font-size: 2rem;
+    border: 3px solid;
+    border-image: linear-gradient(
+            115deg,
+            var(--grad-color1),
+            var(--grad-color2),
+            var(--grad-color3),
+            var(--grad-color4),
+            var(--grad-color5)
+        )
+        1;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    color: var(--btn-color-hover);
+    border-image: linear-gradient(
+            115deg,
+            var(--grad-color5),
+            var(--grad-color4),
+            var(--grad-color3),
+            var(--grad-color2),
+            var(--grad-color1)
+        )
+        1;
+    transform: scale(1.025);
+}
+
+.button:active {
+    transform: scale(0.975);
+}
