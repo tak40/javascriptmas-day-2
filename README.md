@@ -4,6 +4,7 @@
 This project is part of the Scrimba JavaScriptmas challenges, focusing on creating a button with a dynamic gradient border. The challenge is intended to practice CSS skills, particularly in using gradients and hover effects.
 
 ![Gradient Border Button Preview](./images/button-preview.png)
+![Link to Scrim](https://scrimba.com/scrim/co7ba4c24af35ef395cfe7f89)
 
 ## Table of Contents
 1. [Project Overview](#overview)
